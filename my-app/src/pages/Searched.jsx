@@ -18,7 +18,7 @@ function Searched() {
 
     useEffect(() => {
         getSearched(params.search);
-    }, [params.search]); // burada params.search yazmamızın sebebi, searched sayfasında farklı bir kategoriye tıkladığımızda, useEffect çalışsın ve getSearched fonksiyonu çalışsın. Bu yüzden params.search yazdık.
+    }, [params.search]); 
 
     return (
         <Grid>
