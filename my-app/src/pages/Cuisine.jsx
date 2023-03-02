@@ -21,7 +21,7 @@ function Cuisine() {
     useEffect(() => {
         getCusine(params.type);
         console.log(params);
-    }, [params.type]); // burada params.type yazmamızın sebebi, cuisine sayfasında farklı bir kategoriye tıkladığımızda, useEffect çalışsın ve getCusine fonksiyonu çalışsın. Bu yüzden params.type yazdık.
+    }, [params.type]);
 
     return (
         <Grid
